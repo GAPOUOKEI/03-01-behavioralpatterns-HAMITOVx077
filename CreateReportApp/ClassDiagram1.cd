@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CreateReportApp.Program">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreateReportApp.ReportCreate">
+    <Position X="2.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAEAACAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>ReportCreate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreateReportApp.ReportExcelCreate">
+    <Position X="3" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>ReportExcelCreate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreateReportApp.ReportPdfCreate">
+    <Position X="5.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>ReportPdfCreate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreateReportApp.ReportWordCreate">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>ReportWordCreate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
