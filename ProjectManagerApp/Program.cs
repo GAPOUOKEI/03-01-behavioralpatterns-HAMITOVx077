@@ -2,6 +2,12 @@
 
 namespace ProjectManagerApp
 {
+    /*
+     * ФИО студента: Хамитов Айнур Ильгизович
+     * номер варианта: 8
+     * условие задачи (скопировать из листа задания): 
+     * 3 Напишите приложение для управления проектами, позволяющее выполнять команды для создания, обновления и удаления задач проекта, с историей изменений.
+     */
     class Program
     {
         static void Main()
@@ -28,17 +34,30 @@ namespace ProjectManagerApp
                         Console.Write("ID задачи: ");
                         int updateId = int.Parse(Console.ReadLine());
                         Task taskToUpdate = tasks.Find(t => t.Id == updateId);
-
-                        Console.Write("Новое описание: ");
-                        string newDesc = Console.ReadLine();
-                        commandStack.ExecuteCommand(new UpdateTaskCommand(taskToUpdate, newDesc));
+                        if (taskToUpdate != null)
+                        {
+                            Console.Write("Новое описание: ");
+                            string newDesc = Console.ReadLine();
+                            commandStack.ExecuteCommand(new UpdateTaskCommand(taskToUpdate, newDesc));
+                        }
+                        else
+                        {
+                            Console.WriteLine("Задача не найдена");
+                        }
                         break;
 
                     case "3":
                         Console.Write("ID задачи: ");
                         int deleteId = int.Parse(Console.ReadLine());
                         Task taskToDelete = tasks.Find(t => t.Id == deleteId);
-                        commandStack.ExecuteCommand(new DeleteTaskCommand(tasks, taskToDelete));
+                        if (taskToDelete != null)
+                        {
+                            commandStack.ExecuteCommand(new DeleteTaskCommand(tasks, taskToDelete));
+                        }
+                        else
+                        {
+                            Console.WriteLine("Задача не найдена");
+                        }
                         break;
 
                     case "4":
